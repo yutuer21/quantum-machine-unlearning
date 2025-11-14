@@ -525,7 +525,7 @@ class QNNUnlearning:
                                 metrilist.append(metrics)
                                 print(
                                     step,
-                                    f"CF: epochs={epochs}, batch={batch_size}, lr={lr}, "
+                                    f"{mode.upper()}: epochs={epochs}, batch={batch_size}, lr={lr}, "
                                     f"acc={metrics['train_acc']:.4f}, val_acc={metrics['val_acc']:.4f}, "
                                     f"retain_acc={metrics['retain_acc']:.4f}, forget_acc={metrics['forget_acc']:.4f}",
                                 )

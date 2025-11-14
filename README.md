@@ -1,4 +1,4 @@
-# Machine Unlearning Research Code
+# Quantum Machine Unlearning Research Code
 
 This repository contains code for machine unlearning experiments, including:
 
@@ -7,7 +7,7 @@ This repository contains code for machine unlearning experiments, including:
 3. Various unlearning methods comparison (Retrain, Finetune, Scrub, Grad-Asc)
 4. Evaluation of unlearning effectiveness on both classical MLP and quantum neural networks
 
-The paper reference is https://arxiv.org/abs/2508.02422.
+The paper reference is https://arxiv.org/abs/2508.02422 where we for the first time proposed the concept of **Quantum Machine Unlearning**.
 
 ## File Structure
 
@@ -16,7 +16,7 @@ The paper reference is https://arxiv.org/abs/2508.02422.
 - `poison_unlearn.py`: Implementation of various unlearning method wrappers
 - `run_unlearn_mnist.py`: Main script for MNIST unlearning experiments
 - `run_unlearn_xxz.py`: Main script for XXZ model unlearning experiments
-- `run_example.py`: Run the code with data poisoning part as ax example
+- `run_example.py`: Run the code with only data poisoning part
 - `run_test.py`: A simplified test script for quick verification on functionality parallel `run_unlearn_mnist.py`
 - `plot_*.ipynb`: Visualization related notebooks
 
