@@ -1,8 +1,4 @@
-import tensorflow as tf
-import matplotlib.pyplot as plt
 import numpy as np
-
-import tensorcircuit as tc
 from models import *
 from datar import *
 
