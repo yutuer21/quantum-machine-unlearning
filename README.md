@@ -54,6 +54,32 @@ To run the XXZ model unlearning experiments:
 python run_unlearn_xxz.py
 ```
 
+### Notes
+
+- No specified hardware is required.
+
+- The typical environment setup and software installation time is around 10 minutes.
+
+- Part of the expected output from the demo `run_example.py` (expected runtime on a desktop: ~5min):
+
+```bash
+Machine Unlearning Examples
+========================================
+
+1. MNIST Example:
+Loading MNIST data...
+Training: (500, 784)
+250 250
+Validation: (1000, 784)
+Running label flipping experiment with QNN...
+F=5.71 C=6.53 S=12.00 P=13.19: 100%|████████████| 64/64 [00:01<00:00, 43.69it/s]
+
+Results: [{'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.624, dtype=float32), 'val_acc': Array(0.591, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.67, dtype=float32), 'val_acc': Array(0.69100004, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.70400006, dtype=float32), 'val_acc': Array(0.744, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.57000005, dtype=float32), 'val_acc': Array(0.67200005, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.476, dtype=float32), 'val_acc': Array(0.47200003, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.54200006, dtype=float32), 'val_acc': Array(0.513, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.522, dtype=float32), 'val_acc': Array(0.48700002, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.59400004, dtype=float32), 'val_acc': Array(0.34, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.614, dtype=float32), 'val_acc': Array(0.27100003, dtype=float32)}, {'depth': 4, 'epochs': 10, 'learning_rate': 0.005, 'batch_size': 256, 'acc': Array(0.67800003, dtype=float32), 'val_acc': Array(0.261, dtype=float32)}]
+
+2. XXZ Model Example:
+Loading XXZ data...
+```
+
 ## Methods
 
 The repository implements several machine unlearning methods:
